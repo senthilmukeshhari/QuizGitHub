@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+
+    <link rel="stylesheet" href="questions.css">
+
+</head>
+
+<body>
+
+    <!-- Loading... -->
+    <div
+        class="d-none spinner w-100 position-fixed d-flex flex-column justify-content-center align-items-center bg-dark">
+        <div class="logo d-flex align-items-center justify-content-centermb-2">
+            <h2 class="text-danger">Quiz</h2>
+            <h2 class="text-white ps-1">Hub</h2>
+            <h4 class="text-light">?</h4>
+        </div>
+        <div class="loadinng">
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Loading... -->
+
+    <!--Navbar-->
+    <header class="position-sticky top-0 left-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transperent shadow">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <h2 class="text-danger">Quiz</h2>
+                    <h2 class="text-light ps-1">Hub</h2>
+                    <h4 class="text-light">?</h4>
+                </a>
+                <div class="timer d-none text-light fs-4 fw-bold d-flex">
+                    <div class="minutes"> 00&nbsp;:&nbsp;</div>
+                    <div class="seconds"> 00 </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Navbar-->
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row w-100 h-100">
+            <div class="col-12">
+
+                <!-- User Card -->
+                <div class="card bg-transperent shadow mt-4" id="user-card ">
+                    <div class="card-body">
+                        <div class="user-name d-inline-block">
+                            <h2 class="card-tittle text-light user">Hi User...</h2>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="card-text text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatum
+                                consequatur
+                                natus at obcaecati repellat maiores, adipisci dicta. Omnis, tempore! Ipsum?</p>
+                            <button type="button" id="start-btn"
+                                class="btn btn-danger w-md-25 w-sm-50 p-2 fs-5 shadow ms-md-auto px-5">Let's Start
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End User Card -->
+
+                <form>
+                    <!-- First Qusetion Card -->
+                    <div class="card bg-transperent shadow my-3 d-none" id="first-card">
+                        <div class="row">
+                            <div class="col-md-3 col-8 card-header">
+                                <img src="ronaldo.png" alt="..." class="ms-md-3">
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-tittle text-light fs-3 fw-bold">1. Sports</h5>
+                                    <p class="card-text text-light">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Voluptatum
+                                        consequatur
+                                        natus at obcaecati repellat maiores, adipisci dicta. Omnis, tempore! Ipsum?</p>
+                                    <div class="options row text-light d-flex justify-content-center ">
+                                        <div class="first_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="sports-opt" id="sports-1"
+                                                class="form-check-input">
+                                            <label for="sports-1" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="second_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="sports-opt" id="sports-2"
+                                                class="form-check-input">
+                                            <label for="sports-2" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="third_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="sports-opt" id="sports-3"
+                                                class="form-check-input">
+                                            <label for="sports-3" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="fourth_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="sports-opt" id="sports-4"
+                                                class="form-check-input">
+                                            <label for="sports-4" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                    </div>
+                                    <a href="#second-card" id="first-btn" class="btn btn-danger shadow mt-3">Next ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End First Question Card -->
+
+                    <!-- Second Qusetion Card -->
+                    <div class="card bg-transperent shadow my-3 d-none" id="second-card">
+                        <div class="row">
+                            <div class="col-md-3 col-5 card-header">
+                                <img src="tajmahal.png" alt="..." class="ms-md-3">
+                            </div>
+                            <div class="col-md-9 col-12">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-tittle text-light fs-3 fw-bold">2. Technology</h5>
+                                    <p class="card-text text-light">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Voluptatum
+                                        consequatur
+                                        natus at obcaecati repellat maiores, adipisci dicta. Omnis, tempore! Ipsum?</p>
+                                    <div class="options row text-light d-flex justify-content-center ">
+                                        <div class="first_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="tech-opt" id="tech-1" class="form-check-input">
+                                            <label for="tech-1" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="second_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="tech-opt" id="tech-2" class="form-check-input">
+                                            <label for="tech-2" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="third_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="tech-opt" id="tech-3" class="form-check-input">
+                                            <label for="tech-3" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                        <div class="fourth_opt col-5 m-1 d-flex align-items-center">
+                                            <input type="radio" name="tech-opt" id="tech-4" class="form-check-input">
+                                            <label for="tech-4" class="fs-5 px-2 ms-2">Apple apple</label>
+                                        </div>
+                                    </div>
+                                    <button type="button" id="second-btn" class="btn btn-danger shadow my-4">Next
+                                        ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Second Question Card -->
+                </form>
+
+            </div>
+        </div>
+    </main>
+    <!-- End Main Content -->
+
+    
+
+</body>
+
+<script src="questions.js"></script>
+
+</html>

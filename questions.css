@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2f363e;
+}
+
+.bg-transperent {
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10px);
+}
+
+.spinner{
+    height: 100vh;
+    z-index: 2000;
+}
+
+header{
+    z-index: 1000;
+}
+
+.user-name>h2 {
+    width: 100%;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing {
+    animation: typing 2s steps(10);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    100%{
+        border-right: transparent;
+    }
+    0%,99% {
+        border-right: 2px solid white;
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.card-header > img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(15px 15px 15px #25252d);
+}
+
+input[type='radio']{
+    cursor: pointer;
+}
+
+label{
+    cursor:pointer;
+}
+
+.animate{
+    animation: 1s animate;
+}
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}

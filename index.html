@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div class="spinner w-100 position-fixed d-flex flex-column justify-content-center align-items-center bg-dark">
+        <div class="logo d-flex align-items-center justify-content-centermb-2">
+            <h2 class="text-danger">Quiz</h2>
+            <h2 class="text-white ps-1">Hub</h2>
+            <h4 class="text-light">?</h4>
+        </div>
+        <div class="loadinng">
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <header class="position-sticky top-0 left-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transperent shadow">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <h2 class="text-danger">Quiz</h2>
+                    <h2 class="text-light ps-1">Hub</h2>
+                    <h4 class="text-light">?</h4>
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="result.html" class="nav-link">History</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--End Navbar-->
+
+    <main>
+        <div class="row w-100 h-100">
+
+            <div class="background-images col-7 d-md-block d-none">
+                <img src="ronaldo.png" alt="...">
+                <img src="tajmahal.png" alt="...">
+                <img src="messi.png" alt="...">
+                <img src="bill-gates.png" alt="...">
+            </div>
+            <div
+                class="login-box col-md-3 col-12 offset-md-1 col-sm-4 me-5 position-relative d-flex align-items-center justify-content-center">
+                <form
+                    class="welcome-container w-100 h-75 shadow rounded-3 d-flex flex-column align-items-center py-4 bg-transperent">
+                    <img src="hello.png" alt="..." class="">
+                    <div class="d-flex my-2 align-items-end">
+                        <h2 class="text-danger fs-2 text-shadow">W</h2>
+                        <h2 class="text-light fs-3 text-shadow">elcome</h2>
+                    </div>
+                    <input type="text" name="user_name" placeholder="Enter Your Name" autocomplete="false" autofocus="true"
+                        class="text-light" autocapitalize="true">
+                    <a href="questions.html" class="btn mt-2 text-dark">Let's Start</a>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

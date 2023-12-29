@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+
+    <link rel="stylesheet" href="result.css">
+
+</head>
+
+<body>
+
+    <!-- Loading... -->
+    <div
+        class="spinner w-100 position-fixed d-flex flex-column justify-content-center align-items-center bg-dark">
+        <div class="logo d-flex align-items-center justify-content-centermb-2">
+            <h2 class="text-danger">Quiz</h2>
+            <h2 class="text-white ps-1">Hub</h2>
+            <h4 class="text-light">?</h4>
+        </div>
+        <div class="loadinng">
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light me-2" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <!-- End Loading... -->
+
+    <!--Navbar-->
+    <header class="position-sticky top-0 left-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transperent shadow">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <h2 class="text-danger">Quiz</h2>
+                    <h2 class="text-light ps-1">Hub</h2>
+                    <h4 class="text-light">?</h4>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--End Navbar-->
+
+    <main class="container">
+        <div class="row mt-4">
+            <div class="col-7">
+
+                <!-- User Result Card -->
+                <div class="card bg-transperent shadow">
+                    <div class="card-body">
+                        <h2 class="card-tittle text-light fw-bold">Your Result</h2>
+                        <h2 class="text-light fw-bold d-flex justify-content-center my-3 fs-1">Congratulations 🎇</h2>
+
+                        <!-- Result Box -->
+                        <div class="result-box my-5 row d-flex justify-content-center align-items-center">
+                            <!-- Result Circle -->
+                            <div class="result-circle col-7 d-flex justify-content-center align-items-center">
+                                <div class="outer position-relative d-flex justify-content-center align-items-center">
+                                    <div class="inner position-absolute"></div>
+                                    <svg>
+                                        <circle cx="100" cy="100" r="100"></circle>
+                                    </svg>
+                                    <div class="result-percentage position-absolute text-light d-flex justify-content-center align-items-center">
+                                        <h1 class="fw-bold text-shadow">0</h1>
+                                        <span class="fs-3 ms-1">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Result Circle -->
+
+                            <div class="result-dec col-5 text-light">
+                                <h3>Score : 1</h3>
+                                <h3>Attend : 5</h3>
+                            </div>
+                        </div>
+                        <!-- End Result Box -->
+                        <button type="button" class="btn btn-primary fs-5 fw-bold">OK</button>
+                    </div>
+                </div>
+                <!-- End User Result Card -->
+
+            </div>
+            <div class="offset-1 col-4 bg-transperent shadow rounded-3">
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="jquery.min.js"></script>
+    <script src="confetti.js"></script>
+    <script src="result.js"></script>
+
+</body>
+
+</html>
